@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container-row {
+            display: flex;
+            background-color: lightblue;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            border: 3px solid black;
+        }
+
+        .item {
+            flex-basis: 300px;
+            height: 300px;
+            background-color: #ccc;
+        }
+
+        .row2 {
+            justify-content: space-around;
+            background-color: lightpink;
+        }
+
+        .row3 {
+            justify-content: space-evenly;
+            background-color: lightgreen;
+        }
+        .item1{
+            background-color: blue;
+        }
+        .item2{
+            background-color: red;
+        }
+        .item3{
+            background-color: aqua;
+        }
+        .item4{
+            background-color: darkgreen;
+        }
+        .item5{
+            background-color: cornflowerblue;
+        }
+        .row4{
+            background-color: coral;
+        }
+        .item41{
+            background-color: darkgoldenrod;
+            flex-basis: 20%;
+            height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .item42{
+            background-color: darkmagenta;
+            flex-basis: 80%;
+            height: 100vh;
+
+            display: flex;
+            justify-content: space-around;  
+            align-items: center;       
+        }
+        .inner-column-411{
+            flex-basis: 300px;
+            width: 300px;
+            background-color: aquamarine;
+        }
+        .inner-column-412{
+            flex-basis: 300px;
+            width: 300px;
+            background-color: aquamarine;
+        }
+        .inner-column-413{
+            flex-basis: 300px;
+            width: 300px;
+            background-color: aquamarine;
+        }
+        .inner-row-421{
+            flex-basis: 300px;
+            height: 600px;
+            background-color: deeppink;
+            align-self: flex-start;  
+            ;          
+        }
+        .inner-row-422{
+            flex-basis: 400px;
+            height: 600px;
+            background-color: rgb(125, 12, 255);
+        }
+        .inner-row-423{
+            flex-basis: 500px;
+            height: 600px;
+            background-color: rgb(255, 0, 0);
+            align-self: flex-end;
+        }       
+    </style>
+</head>
+
+<body>
+    <div class="container-row">
+        <div class="item item1">
+            1
+        </div>
+    </div>
+    <div class="container-row row2">
+        <div class="item item2">
+            2
+        </div>
+        <div class="item item3">
+            3
+        </div>
+    </div>
+    <div class="container-row row3">
+        <div class="item item4">
+            4
+        </div>
+        <div class="item item5">
+            5
+        </div>
+        <div class="item item6">
+            6
+        </div>
+    </div>
+    <!-- flexbox 1 -->
+    <div class="container-row row4">
+        <!-- flexbox 2 -->
+        <div class="item item41">
+            <!-- width 20% -->
+            <!-- 41 -->
+            <div class="item inner-column-411">
+                411
+            </div>
+            <div class="item inner-column-412">
+                412
+            </div>
+            <div class="item inner-column-413">
+                413
+            </div>
+        </div>
+        <div class="item item42">
+             <!-- 42 -->
+             <!-- width 80% -->
+            <div class="item inner-row-421">
+                <input type="button" value="測試按鈕1" style="width:90%;height:90%;"> 
+            </div>
+            <div class="item inner-row-422">
+                <input type="button" value="測試按鈕2" style="width:90%;height:90%;"> 
+            </div>
+            <div class="item inner-row-423">
+                <input type="button" value="測試按鈕3" style="width:90%;height:90%;"> 
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>
