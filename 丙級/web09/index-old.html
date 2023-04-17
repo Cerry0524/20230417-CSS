@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * { border-width: 1024px;
+            border-: 768px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-basis: 100vw;                       
+            font-size: 40px;
+            justify-content: center;
+            text-align: center;            
+        }
+
+        .c-top {
+            height: 10vh;
+            background-color: aqua;
+            align-items: center;                       
+        }
+
+        .c-body {
+            height: 80vh;
+            background-color: lightsalmon;
+
+            display: flex;
+        }
+
+        .c-footer {
+            height: 10vh;
+            background-color: lightgreen;
+        }
+
+        .item21 {
+            flex-basis: 20vw;
+            background-color: lightblue;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .item22 {
+            flex-basis: 80vw;
+            background-color: lightseagreen;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nav {
+            flex-basis: 90%;
+            background-color: brown;            
+        }
+
+        .update {
+            flex-basis: 10%;
+            background-color: blueviolet;
+        }
+        .marquee{
+            flex-basis: 10%;
+            background-color: darkkhaki;
+        }
+        .content{
+            flex-basis: 90%;
+            background-color:darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container c-top">
+        top
+    </div>
+    <div class="container c-body">
+        <!-- 2 -->
+        <div class=" item21">
+            <!-- 21 -->
+            <div class="nav">
+                nav
+            </div>
+            <div class="update">
+                update
+            </div>
+        </div>
+        <div class=" item22">
+            <!-- 22 -->
+            <div class="marquee">
+                marquee
+            </div>
+            <div class="content">
+                content
+            </div>
+        </div>
+    </div>
+    <div class="container c-footer">
+        footer
+    </div>
+</body>
+
+</html>

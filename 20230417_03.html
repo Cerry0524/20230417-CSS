@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-basis: 100vw;
+        }
+
+        .top {
+            background-color: aqua;
+            height: 20vh;
+            align-self: center;
+        }
+
+        .body {
+            background-color: blanchedalmond;
+            height: 60vh;
+
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer {
+            background-color: lightcoral;
+            height: 20vh;
+
+        }
+
+        .item {
+            background-color: gray;
+            flex-basis: 200px;
+            height: 60px;
+            align-self: center;
+        }
+
+        .body1 {
+            background-color: blueviolet;
+            flex-basis: 20%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; 
+            align-self: center;        
+            
+        }
+        .body2 {
+            background-color: lightseagreen;
+            display: flex;
+            flex-basis: 50%;
+            height: 90%;
+            justify-content: space-around;
+            align-self: center;            
+        }
+
+        .body3 {
+            background-color: lightyellow;
+            display: flex;
+            flex-basis: 20%;
+            height: 95%;
+            flex-direction: column;
+            justify-content: space-around;
+            align-self: center;
+        }
+
+        .body11 {
+            background-color: azure;
+            align-self: center;
+            flex-basis: 10vw;
+            width:80%;
+        }
+        .body12 {
+            background-color: azure;
+            align-self: center;
+            flex-basis: 10vw;
+            width:80%;
+        }
+        .body13 {
+            background-color: azure;
+            align-self: center;
+            flex-basis: 10vw;
+            width:80%;
+        }
+        .body21 {
+            background-color: azure;            
+            flex-basis: 10vw;
+            height:60%;
+            align-self: center;  
+        }
+        .body22 {
+            background-color: azure;            
+            flex-basis: 10vw;
+            height:70%;
+            align-self: center;  
+        }
+        .body23 {
+            background-color: azure;            
+            flex-basis: 10vw;
+            height:80%;
+            align-self: center;  
+        }
+        .body31 {
+            background-color: blue;
+            align-self: flex-start;
+            flex-basis: 10vw;
+            width:80%;
+        }
+        .body32 {
+            background-color:  blue;
+            align-self: center;
+            flex-basis: 10vw;
+            width:80%;
+        }
+        .body33 {
+            background-color:  blue;
+            align-self: flex-end;
+            flex-basis: 10vw;
+            width:80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container top">
+        <div class="item top">1</div>
+        <div class="item top">2</div>
+        <div class="item top">3</div>
+    </div>
+    <div class="container body">
+        <div class="body1">
+            <div class="body11">11</div>
+            <div class="body12">12</div>
+            <div class="body13">13</div>
+        </div>
+        <div class="body2">
+            <div class="body21">21</div>
+            <div class="body22">22</div>
+            <div class="body23">23</div>
+        </div>
+        <div class="body3">
+            <div class="body31">31</div>
+            <div class="body32">32</div>
+            <div class="body33">33</div>
+        </div>
+    </div>
+    <div class="container footer">
+        <div class="item footer1">7</div>
+        <div class="item footer2">8</div>
+        <div class="item footer3">9</div>
+    </div>
+</body>
+
+</html>
