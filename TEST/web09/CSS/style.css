@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: "標楷體";  
 }
 .container {
     display: flex;
@@ -30,10 +31,34 @@
 .aside>.menu{
     flex-basis:calc(100% - 25px) ;
     border: 2px solid green;
+
+    font-size: 24px;
+    color: #FF00FF;    
+}
+.menu>a{
+    display: block;
+    background-image: url(../images/menu1.png);
+    width: 200px;
+    height: 40px;
+    margin: 10px auto;
+    text-decoration: none;    
+    color: #000000;
+    font-size: 16px;
+    padding: 8px;    
+}
+.menu>a:hover{
+    background-image: url(../images/menu2.png);
+}
+.menu>.menu-btn{
+    text-decoration: underline;
+    color: #0000FF;
 }
 .aside>.update{
     flex-basis: 25px;
     border: 2px solid rgb(0, 140, 255);
+    font-size: 16px;
+    color: #000000;
+    text-align: center;
 }
 .box{
     flex-basis: calc(1000px - 215px);
@@ -45,6 +70,8 @@
 .box>.marquee{
     flex-basis: 29px;
     border: 2px solid red;
+    font-size: 24px;
+    color:#0000FF;      
 }
 .box>.content{
     flex-basis:calc(100% - 29px);
@@ -54,4 +81,7 @@
     flex-basis: 1000px;
     height: 20px;
     border: 2px solid darkmagenta;
+    border-top: 0px;
+    font-size: 16px;
+    text-align: center;
 }
